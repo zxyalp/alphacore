@@ -6,11 +6,15 @@ package com.strategy;
 abstract class Duck {
 
     public void quack(){
-        System.out.print("gua...gua...gua");
+        System.out.print("会呱呱叫");
     }
 
     public void swim(){
-        System.out.print("swimming...");
+        System.out.println("会游泳");
+    }
+
+    public void fly(){
+        System.out.println("会飞了");
     }
 
     public abstract void display();

@@ -6,6 +6,6 @@ package com.strategy;
 public class MallardDuck extends Duck {
 
     public void display(){
-        System.out.print("This is MallardDuck.");
+        System.out.println("This is MallardDuck.");
     }
 }
