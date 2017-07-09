@@ -5,17 +5,24 @@ package com.strategy;
  */
 abstract class Duck {
 
-    public void quack(){
-        System.out.print("会呱呱叫");
+    QuackBehavior quackBehavior;
+    FlyBehavior flyBehavior;
+
+
+    public void performQuack(){
+        quackBehavior.quack();
     }
+
+
+    public void performFly(){
+        flyBehavior.fly();
+    }
+
 
     public void swim(){
-        System.out.println("会游泳");
+        System.out.println("鸭子会游泳");
     }
 
-    public void fly(){
-        System.out.println("会飞了");
-    }
 
     public abstract void display();
 
