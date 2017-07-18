@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js外部调用</title>
+    <script type="text/javascript">
+
+        function test01() {
+            var name = document.getElementById("name").value;
+            alert("你输入的内容：" + name);
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <div>
+
+        <label>输入第一个数：</label><input type="text" id="num01" />
+        <label>选择算法</label>
+
+        <label>输入第二个数：</label><input type="text" id="num02" />
+
+        <input type="button" value="提交" onclick="test01()" />
+    </div>
+</body>
+</html>
