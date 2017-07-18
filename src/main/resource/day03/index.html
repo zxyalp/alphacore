@@ -6,8 +6,14 @@
     <script type="text/javascript">
 
         function test01() {
-            var name = document.getElementById("name").value;
-            alert("你输入的内容：" + name);
+            var num01 = document.getElementById("num01").value;
+            var num02 = document.getElementById("num02").value;
+            var sbol = document.getElementsByName("symbol");
+
+            alert("你输入的内容：" + num01);
+
+            alert("你选择的符号：" + sbol);
+
         }
 
     </script>
@@ -17,12 +23,23 @@
 
     <div>
 
-        <label>输入第一个数：</label><input type="text" id="num01" />
-        <label>选择算法</label>
+        <form>
+        <label>输入第一个数：</label>
+            <input type="text" id="num01" >
+            <div>
+        <label>选择运算符号：</label>
+            <input type="radio" name="symbol" value="jia">+
+            <input type="radio" name="symbol" value="jian">-
+            <input type="radio" name="symbol" value="cheng">*
+            <input type="radio" name="symbol" value="chu">/
+            </div>
+        <label>输入第二个数：</label><input type="text" id="num02" >
+            <div>
+                <input type="button" value="重置" onclick="test01()" >
+                <input type="button" value="提交" onclick="test01()" >
 
-        <label>输入第二个数：</label><input type="text" id="num02" />
-
-        <input type="button" value="提交" onclick="test01()" />
+            </div>
+        </form>
     </div>
 </body>
 </html>
